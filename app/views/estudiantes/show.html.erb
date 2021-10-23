@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @estudiante.nombre %>
+</p>
+
+<p>
+  <strong>App paterno:</strong>
+  <%= @estudiante.app_paterno %>
+</p>
+
+<p>
+  <strong>App materno:</strong>
+  <%= @estudiante.app_materno %>
+</p>
+
+<p>
+  <strong>Curso:</strong>
+  <%= @estudiante.curso_id %>
+</p>
+
+<%= link_to 'Edit', edit_estudiante_path(@estudiante) %> |
+<%= link_to 'Back', estudiantes_path %>

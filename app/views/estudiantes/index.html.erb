@@ -2,14 +2,14 @@
 
 <h1>Estudiantes</h1>
 
-<table>
+<table border="1">
   <thead>
     <tr>
-      <th>Nombre</th>
-      <th>App paterno</th>
-      <th>App materno</th>
-      <th>Curso</th>
-      <th colspan="3"></th>
+      <th width="80">Nombre</th>
+      <th width="80">App paterno</th>
+      <th width="80">App materno</th>
+      <th width="50">Curso</th>
+      <th width="10" colspan="3">Acciones</th>
     </tr>
   </thead>
 
@@ -19,7 +19,7 @@
         <td><%= estudiante.nombre %></td>
         <td><%= estudiante.app_paterno %></td>
         <td><%= estudiante.app_materno %></td>
-        <td><%= estudiante.curso_id %></td>
+        <td><%= estudiante.curso.nombre %></td>
         <td><%= link_to 'Mostrar', estudiante %></td>
         <td><%= link_to 'Editar', edit_estudiante_path(estudiante) %></td>
         <td><%= link_to 'Eliminar', estudiante, method: :delete, data: { confirm: 'Esta seguro?' } %></td>
